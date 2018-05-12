@@ -53,7 +53,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         let sound = sounds[indexPath.row]
-        cell.textLabel?.text = sound.name
+        cell.textLabel?.text = "Nombre: "+String(describing: sound.name!)+" Tiempo: "+String(describing: sound.time!)
         return cell
     }
     override func didReceiveMemoryWarning() {

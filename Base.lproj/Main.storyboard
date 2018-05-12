@@ -98,6 +98,12 @@
                                     <action selector="addTapped:" destination="i0o-WU-LEa" eventType="touchUpInside" id="PZR-vU-hPf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdt-dd-gE2">
+                                <rect key="frame" x="141" y="334" width="38" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -107,7 +113,9 @@
                             <constraint firstItem="c1B-Il-hTU" firstAttribute="centerX" secondItem="WzM-OG-4mq" secondAttribute="centerX" id="O8h-jD-fGG"/>
                             <constraint firstItem="DNR-dL-zgM" firstAttribute="top" secondItem="c1B-Il-hTU" secondAttribute="bottom" constant="20" id="OD3-bK-ClR"/>
                             <constraint firstItem="SBH-uj-iEK" firstAttribute="top" secondItem="QSL-uL-1Sp" secondAttribute="bottom" constant="20" id="Ogx-Fy-cFV"/>
+                            <constraint firstItem="tdt-dd-gE2" firstAttribute="centerX" secondItem="WzM-OG-4mq" secondAttribute="centerX" id="Sby-Qt-JEO"/>
                             <constraint firstItem="SBH-uj-iEK" firstAttribute="centerX" secondItem="WzM-OG-4mq" secondAttribute="centerX" id="Tv5-jr-Gk6"/>
+                            <constraint firstItem="tdt-dd-gE2" firstAttribute="top" secondItem="SBH-uj-iEK" secondAttribute="bottom" constant="30" id="U7B-M9-IQI"/>
                             <constraint firstItem="knY-h2-BNH" firstAttribute="leading" secondItem="FfN-NT-Ubu" secondAttribute="leading" constant="20" id="VxD-LQ-PyA"/>
                             <constraint firstItem="DNR-dL-zgM" firstAttribute="centerX" secondItem="WzM-OG-4mq" secondAttribute="centerX" id="aWK-s0-olE"/>
                             <constraint firstItem="c1B-Il-hTU" firstAttribute="top" secondItem="FfN-NT-Ubu" secondAttribute="top" constant="20" id="eTq-Vf-gsX"/>
@@ -116,6 +124,7 @@
                     </view>
                     <connections>
                         <outlet property="addButton" destination="SBH-uj-iEK" id="QeG-s9-BPd"/>
+                        <outlet property="lblTime" destination="tdt-dd-gE2" id="JBZ-kD-edp"/>
                         <outlet property="nameTextField" destination="QSL-uL-1Sp" id="het-tH-SJu"/>
                         <outlet property="playButton" destination="DNR-dL-zgM" id="aPf-Wd-HFE"/>
                         <outlet property="recordButton" destination="c1B-Il-hTU" id="Va1-Yq-vmx"/>
